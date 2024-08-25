@@ -1,0 +1,72 @@
+
+/* Review Section */
+.review-grid {
+    display: flex;
+    text-emphasis: none;
+    margin-left: 140px;
+    margin-top: 50px;
+}
+
+.reviews{ 
+    background-color:  #f0f4ff;                  /*Değerlendirme Kriteri - 6*/
+}
+
+.review {
+    margin-left: 90px;
+    border-radius: 10px;
+    width: 35%;
+    flex-direction: column;
+    margin-bottom: 80px;
+}
+
+.review-header {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 10px;
+}
+
+.review-image {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.review-info {
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+}
+.review-body p{ font-size: 0.8rem;}
+.review .review-body {
+    padding: 2px 20px;
+    background:#355592;                          /*Değerlendirme Kriteri - 6*/
+    font-size: 10px;
+    color: #fff;
+    line-height: 15px;
+    margin: 0;
+    position: relative;
+    text-align: start;
+}
+
+.review .review-body:before,
+.review .review-body:after {
+    content: "";
+    border-width: 18px 0 0 18px;
+    border-style: solid;
+    border-color: #5d7aa7 transparent transparent;
+    position: absolute;
+    bottom: -18px;
+    left: 0;
+}
+
+.review .review-body:after {
+    border-width: 18px 18px 0 0;
+    left: auto;
+    right: 0;
+}
+
+.review-info p {
+    margin: 0;
+}

@@ -1,0 +1,46 @@
+
+/*Footer Section*/
+footer {
+    background-color:#355592;                    /*Değerlendirme Kriteri - 6*/
+    color: #fff;
+    padding: 4px;
+    font-size: 0.8rem;
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.footer-content {
+    margin-left: 215px;
+    margin-right: 215px;
+}
+
+.footer-content img {
+    width: 17%;
+}
+
+.footer-links {
+    display: flex;
+    gap: 300px;
+    justify-content: center;
+}
+.footer-links h3 {
+    margin-bottom: 10px; 
+}
+
+.link-group ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.link-group ul li {
+    margin-bottom: 7px;
+}
+.link-group ul li a{
+    color: #fff;
+    text-decoration:none;
+   
+}

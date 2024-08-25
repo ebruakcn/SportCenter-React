@@ -1,0 +1,38 @@
+
+/*Contact Sectin*/
+.contact-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 2em;
+    margin-top: 50px;
+}
+
+.contact-info {
+     flex: 1;
+     text-align: start;
+}
+
+.contact-item {
+    margin-bottom: 15px;
+    display:flex;
+    gap: 20px;
+}
+.contact-item label{
+    font-size: large;
+    font-weight: bold;
+}
+.contact-info span{font-size: small;}
+.custom-form {
+    width: 100%;
+    padding: 0.85em;
+    margin-bottom: 1em;
+    border:none;
+    border-radius: 5px; 
+    background-color: #f0f4ff;                   /*Değerlendirme Kriteri - 6*/
+}
+/*Map Section*/
+.map {
+    flex: 1;
+}

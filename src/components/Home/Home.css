@@ -1,0 +1,166 @@
+
+/*Navbar Section*/
+.navbar {
+    width: 100%;
+    position: fixed; 
+    color:#fff;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px 10px;
+    gap: 100px; 
+    transition: background-color 0.3s ease;
+}
+
+/* Initial transparent state */
+.navbar.transparent {
+    background-color: transparent;
+}
+
+/* Scrolled state with blue background */
+.navbar.scrolled {
+    background-color: #355592;                 /*Degerlendirme Kriteri - 6*/
+}
+.nav-links {
+    display: flex;
+    gap: 2px;
+}
+
+.nav-links a {
+    margin: 0 1rem;
+    display: inline;
+    color: #fff;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+.logo img {
+    height: 60px; 
+}
+
+/*Navbar Buton*/
+.join-us {
+    background-color: #f39c12;                  /*Degerlendirme Kriteri - 6*/
+    border: none;
+    padding: 0.3rem 0.5rem;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+}
+/*Toogle Menu Section*/
+.hamburger {
+    display: none;
+}
+
+.hamburger .line {
+    width: 25px;
+    height: 3px;
+    background-color:#fff;
+    margin: 5px 0;
+}
+
+/*Home Section*/
+.home {
+    min-height: 70%; 
+    position: relative; 
+    display: flex;
+    justify-content: center;
+    color: #fff;
+    text-align: left; 
+}
+
+.home img {
+    width: 100%;
+    height: 110%;
+    object-fit:cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1; 
+ 
+}
+
+.home-content {
+    position: relative;
+    z-index: 1; 
+    max-width: 70%; 
+    padding: 2rem;
+}
+
+.home-text {
+    background: rgba(0, 0, 0, 0.5);              /*Degerlendirme Kriteri - 6*/
+    padding: 1rem;
+    border-radius: 5px;
+}
+
+.home-content h1 {
+    font-size: 3.5rem; 
+    margin: 0.5rem 0;
+    text-align: left;
+}
+
+.home-text p {
+    font-size: 1.1rem; 
+    margin: 0;
+    color: #ffffff;
+}
+
+.home-buttons {
+    margin-top: 0.5rem;
+}
+
+.home-buttons button {
+    font-weight: bold;
+    color: #fff;
+    background: rgba(0, 0, 0, 0);
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 4px;
+    margin-right: 2rem;
+    border: 1px solid #fff;
+}
+
+.home-buttons button:hover {
+   background-color: #355592;                    /*Degerlendirme Kriteri - 6*/
+}
+
+.powerfull-box {
+    background-color: #355592;                   /*Degerlendirme Kriteri - 6*/
+    color:#fff;
+    padding: 0 1rem;
+    display: inline-block;
+    border-radius: 5px;
+    margin-top: 90px;
+}
+/* Info Section */
+.info-boxes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px; 
+    text-align: center;
+    background-color: #f1f8ff;                   /*Değerlendirme Kriteri - 6*/
+}
+
+.info-box {
+    background-color: #fff;
+    border: 1px solid #fff;
+    padding: 20px;
+    width: 200px; 
+   
+}
+
+.info-box h3 {
+    margin: 0;
+    font-size: 1.5rem;
+    color: #355592;
+}
+
+.info-box p {
+    margin: 0.5rem 0 0;
+    font-size: 1.2rem;
+    color: #000000;
+    font-weight: bold;
+}

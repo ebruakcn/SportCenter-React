@@ -1,0 +1,104 @@
+
+/*Classes Section*/
+.classes {
+    position: relative;
+    text-align: center;
+    overflow: hidden; 
+   
+}
+/*Our Classes Section*/
+.class-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 8rem;
+    margin-bottom: 2rem;
+}
+
+.class-btn {
+    position: relative;
+    padding: 10px 20px;
+    border: none;
+    background-color: #355592;                   /*Değerlendirme Kriteri - 6*/
+    color: #fff; 
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px; 
+    outline: none;
+    transition: background-color 0.3s, transform 0.3s;
+    font-weight: bold;
+}
+
+.class-btn.active {
+    background-color: #355592; 
+}
+
+.class-btn:hover {
+    background-color:  #f39c12;                  /*Değerlendirme Kriteri - 6*/
+}
+
+.class-btn::after {
+    content: "";
+    position: absolute;
+    bottom: -9px; 
+    left: 50%;
+    transform: translateX(-50%) scaleY(0); 
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 10px solid  #f39c12;
+}
+
+.class-btn:hover::after {
+    transform: translateX(-50%) scaleY(1); 
+}
+
+.class-details {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 1rem;
+    margin-top: 50px;
+}
+
+.class-description {
+    flex: 1;
+    text-align: start;
+    margin-left: 220px;
+}
+
+.class-description h3,
+.class-description h4 {
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+
+.class-description ul {
+    list-style: none;
+    padding: 0;
+}
+
+.class-description ul li {
+    margin-bottom: 1rem;
+}
+
+.class-image {
+    flex: 1;
+}
+
+.class-image img {
+    width: 70%;
+    border-radius: 5px;
+}
+/*Our classes gray background part*/
+.background-box {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 90%;
+    height: 200%;
+    background-color: #f7f7f7;
+    clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 60% 100%, 30% 0%); 
+    z-index: -1; 
+}
